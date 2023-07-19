@@ -8,7 +8,7 @@ const TabMovieItem = ({ maHeThongRap }) => {
     rapServ
       .getAllLichChieuHeThong(maHeThongRap)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setLichChieu(res.data.content);
       })
       .catch((err) => {

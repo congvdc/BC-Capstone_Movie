@@ -9,7 +9,7 @@ import { getAllUser } from '../../redux/slices/nguoiDungSlice';
 const TableUser = () => {
   const dispatch = useDispatch();
   const { users } = useSelector((state) => state.nguoiDung);
-  console.log(users);
+  // console.log(users);
   const columns = [
     {
       title: 'ID',
@@ -44,11 +44,11 @@ const TableUser = () => {
       dataIndex: 'maLoaiNguoiDung',
       render: (text, record, index) => {
         // text chứa giá trị của thuộc tính đó trong data
-        console.log(text);
+        // console.log(text);
         // record chứa các phần tử trong mảng data
-        console.log(record);
+        // console.log(record);
         // index là vị trí của phần tử trong mảng data
-        console.log(index);
+        // console.log(index);
 
         // text == "QuanTri" ? "Quản Trị" : "Khách Hàng"
         return (

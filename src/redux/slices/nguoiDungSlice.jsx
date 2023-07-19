@@ -24,7 +24,7 @@ export const nguoiDungSlice = createSlice({
     // ở đây tạo một phương thức giúp xử lí state bên trên store redux
     setDuLieuHoTen: (state, action) => {
       // check xem hoTen có dữ liệu hay không, nếu không có set dữ liệu cho nó
-      console.log(action);
+      // console.log(action);
       if (state.hoTen == null) {
         state.hoTen = action.payload;
       }
@@ -37,7 +37,7 @@ export const nguoiDungSlice = createSlice({
     builder.addCase(getAllUser.fulfilled, (state, action) => {
       // bên trong action thuộc tính payload sẽ chứa các giá trị được trả về từ hàm chạy createAsyncThunk
       state.users = action.payload;
-      console.log(action);
+      // console.log(action);
     });
     // reject sẽ chạy khi mà bất đồng bộ chạy có lỗi, sẽ vào case này và xử lí
     builder.addCase(getAllUser.rejected, (state, action) => {
