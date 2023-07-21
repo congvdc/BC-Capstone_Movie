@@ -24,10 +24,10 @@ const Header = () => {
               <p className="text-gray-800">{hoTen.hoTen}</p>
             ) : (
               <>
-                <NavLink to="/login" className="text-white text-xl">
+                <NavLink to="/login" className="text-gray-800 text-xl">
                   <i className="fa-solid fa-circle-user mr-2 text-gray-700"></i> Đăng nhập
                 </NavLink>
-                <NavLink to="/" className="text-white text-xl ml-4">
+                <NavLink to="/" className="text-gray-800 text-xl ml-4">
                   <i className="fa-solid fa-circle-user mr-2 text-gray-700"></i> Đăng ký
                 </NavLink>
               </>

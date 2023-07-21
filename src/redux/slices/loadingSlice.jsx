@@ -15,7 +15,7 @@ export const loadingSlice = createSlice({
         set_loading_ended: (state, action) => {
             state.isLoading = false;
         },
-    }
+    },
 });
 
 // Action creators are generated for each case reducer function

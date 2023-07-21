@@ -21,7 +21,7 @@ const AdminTemplate = () => {
     const user = layDuLieuLocal('user');
     // một là không có dữ liệu
     // hai là lấy lên mà mã loại khách hàng không phải là quản trị
-    if(user){
+    if (user) {
       // console.log(user);
       if(user.maLoaiNguoiDung != 'QuanTri'){
         window.location.href = 'https://www.google.com'
@@ -29,7 +29,7 @@ const AdminTemplate = () => {
     } else {
       window.location.href = 'https://www.google.com'
     }
-  }, [])
+  }, []);
 
   return (
     <Layout className="min-h-screen">

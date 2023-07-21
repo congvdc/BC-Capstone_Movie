@@ -7,6 +7,7 @@ import AdminTemplate from './template/AdminTemplate';
 import LoginAdmin from './pages/LoginAdmin/LoginAdmin';
 import UserManagement from './pages/UserManagement/UserManagement';
 import Loading from './pages/Loading/Loading';
+import Detail from './Components/Detail/Detail';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<UserTemplate />}>
           <Route index element={<HomePage />} />
           <Route path="/login" element={<Login />} />
+          <Route path='/detail/:id' element={<Detail />} />
         </Route>
         <Route path="/admin" element={<AdminTemplate />}>
           <Route index element={<UserManagement />} />
